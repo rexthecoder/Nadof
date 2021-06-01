@@ -1,8 +1,10 @@
+import SignUp from './pages/signUp';
+
 const Main = () => {
   return (
-    <>
-      <signUp/>
-    </>
+    
+      <SignUp/>
+    
   )
 }
 

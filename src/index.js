@@ -1,12 +1,16 @@
+import './assets/css/tailwind.output.css';
+import './assets/img/registration.svg';
+import './assets/css/global.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import Main from './main.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );
