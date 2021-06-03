@@ -6,11 +6,12 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'registration': "url(../img/registration.svg)",
-       
+
       }),
       fontFamily: {
         'title': ['Poppins',]
       },
+
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -23,7 +24,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      ringColor: ['hover', 'active'],
+    },
   },
   plugins: [],
 }
