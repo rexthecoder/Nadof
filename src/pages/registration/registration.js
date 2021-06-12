@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -20,6 +21,7 @@ const Registration = () => {
         </div>);
     }
     return (
+        <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.5}}>
         <div className="flex flex-row overflow-hidden">
             <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                 <div className="flex flex-col space-y-6">
@@ -61,6 +63,7 @@ const Registration = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
     )
 }
 
