@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import { AiOutlineLeft } from 'react-icons/ai';
+import { BiLock } from 'react-icons/bi';
+
 import Logo from '../assets/img/logo.svg';
 import quote from '../assets/img/quote.svg';
 import quoteEnd from '../assets/img/quoteEnd.svg';
-import { AiOutlineLeft } from 'react-icons/ai';
-import { BiLock } from 'react-icons/bi'
-import  Button from '../components/Button'; 
+import Button from '../components/Button';
 import Inputfields from '../components/Inputfields';
-const BVN = () => {
+
+const RegistrationFinish = () => {
     var rows = [];
     for (var i = 0; i < 100; i++) {
         rows.push(<div className="circle-container">
@@ -40,7 +43,7 @@ const BVN = () => {
                     <div className="text-base text-gray-300 pb-5">For the purpose of industry regulation, your<br />details are required.</div>
                     <hr className="w-4/5 mb-3"/>
              <form className="space-y-14">
-                <Inputfields type="text" label="Bank verification number(BVN)" placeholder="2090912345567" />
+                <Inputfields type="text" label="Bank verification number(RegistrationFinish)" placeholder="2090912345567" />
                 <Button text="Save and Continue" className="block w-3/4 h-12  text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300"/>
                 <div className="text-base text-gray-300 justify-center items-center"><BiLock color="gray" /> Your Info is Safely Secured </div>
                 </form>
@@ -50,5 +53,5 @@ const BVN = () => {
     )
 }
 
-export default BVN;
+export default RegistrationFinish;
 

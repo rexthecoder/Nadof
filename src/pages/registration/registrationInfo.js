@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import { AiOutlineLeft } from 'react-icons/ai';
+import { BiLock } from 'react-icons/bi';
+
 import Logo from '../assets/img/logo.svg';
 import quote from '../assets/img/quote.svg';
 import quoteEnd from '../assets/img/quoteEnd.svg';
-import { AiOutlineLeft } from 'react-icons/ai';
-import { BiLock } from 'react-icons/bi'
-import  Button from '../components/Button'; 
+import Button from '../components/Button';
 import Inputfields from '../components/Inputfields';
-const RInfo = () => {
+
+const RegistrationInfo = () => {
     var rows = [];
     for (var i = 0; i < 100; i++) {
         rows.push(<div className="circle-container">
@@ -52,4 +55,4 @@ const RInfo = () => {
     )
 }
 
-export default RInfo;
+export default RegistrationInfo;

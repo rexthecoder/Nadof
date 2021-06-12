@@ -1,12 +1,15 @@
-import React from 'react'
-import Logo from '../assets/img/logo.svg';
-import quote from '../assets/img/quote.svg';
-import quoteEnd from '../assets/img/quoteEnd.svg';
+import React from 'react';
+
 import { AiOutlineLeft } from 'react-icons/ai';
-import { FcGoogle }from 'react-icons/fc';
-import  Button from '../components/Button'; 
-import Inputfields from '../components/Inputfields';
-const SignUp1 = () => {
+import { FcGoogle } from 'react-icons/fc';
+
+import Logo from '../../assets/img/logo.svg';
+import quote from '../../assets/img/quote.svg';
+import quoteEnd from '../../assets/img/quoteEnd.svg';
+import Button from '../../components/Button';
+import Inputfields from '../../components/Inputfields';
+
+const Registration = () => {
 
     var rows = [];
     for (var i = 0; i < 100; i++) {
@@ -61,5 +64,5 @@ const SignUp1 = () => {
     )
 }
 
-export default SignUp1;
+export default Registration;
 

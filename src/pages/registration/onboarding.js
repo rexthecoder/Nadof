@@ -1,12 +1,12 @@
+import { Card } from '../../components/Card';
 import artist from '../assets/img/artist.svg';
 import Logo from '../assets/img/logo.svg';
 import quote from '../assets/img/quote.svg';
 import quoteEnd from '../assets/img/quoteEnd.svg';
 import student from '../assets/img/student.svg';
 import tourist from '../assets/img/tourist.svg';
-import { Card } from '../components/Card';
 
-const SignUp = () => {
+const Onboarding = () => {
     var rows = [];
     for (var i = 0; i < 100; i++) {
         // note: we are adding a key prop here to allow react to uniquely identify each
@@ -51,7 +51,7 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default Onboarding
 
 
 

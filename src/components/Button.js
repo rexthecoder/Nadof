@@ -1,5 +1,4 @@
-import React from 'react'
-import { FcGoogle }from 'react-icons/fc';
+import React from 'react';
 
 const Button = ({text, className, onclick}) => {
     return (
