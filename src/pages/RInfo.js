@@ -43,8 +43,8 @@ const RInfo = () => {
                 <Inputfields type="text" label="Phone number" placeholder="244758291" />
                 <Inputfields type="text" label="Your address" placeholder="Please enter address" />
                 <Inputfields type="text" label="Country of residence" placeholder="Please select" />
-                <Button text="Save and Continue" className="block w-3/4 h-12 mt-5 text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300"/>
-                <div className="text-base text-gray-300 justify-center items-center"><BiLock color="gray" /> Your Info is Safely Secured </div>
+                <Button className="block w-3/4 h-12 mt-5 text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Save and Continue</Button>
+                <div className="flex text-base text-gray-300 justify-center items-center"><BiLock color="gray" /> Your Info is Safely Secured </div>
                 </form>
                 </div>
             </div>          
