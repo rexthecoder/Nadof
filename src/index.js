@@ -5,12 +5,17 @@ import './assets/css/global.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import Main from './main.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Router>
+      <Main />
+    </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
