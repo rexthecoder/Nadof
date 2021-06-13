@@ -1,3 +1,4 @@
+//card component 
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const Card = ({image, subtitle, title}) => {
