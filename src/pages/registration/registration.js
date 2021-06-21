@@ -21,7 +21,7 @@ const Registration = () => {
         </div>);
     }
     return (
-        <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.5}}>
+        <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.2}}>
         <div className="flex flex-row overflow-hidden">
             <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                 <div className="flex flex-col space-y-6">
@@ -46,7 +46,7 @@ const Registration = () => {
                     <div className="text-base text-gray-300 pb-5">For the purpose of industry regulation, your<br />details are required.</div>
                     <hr className="w-4/5 mb-3"/>
                     <form className="space-y-3">
-                       <Inputfields type="text" label="Your fullname*" placeholder="Abigail Dwain" />
+                       <Inputfields show= {true} type="text" label="Your fullname*" placeholder="Abigail Dwain" />
                        <Inputfields type="text" label="Email address*" placeholder="Enter email address " />
                        <Inputfields type="text" label="Create password*" placeholder="Create password" />
                         <div className="flex items-center">
@@ -58,7 +58,7 @@ const Registration = () => {
                         <hr className="w-1/3"/><span className="p-2 text-center text-gray-400">Or</span>
                         <hr className="w-1/3"/>
                         </div>
-                        <Button  className="flex justify-around items-center border border-gray-400 text-center text-gray-500 w-3/4 h-12 rounded-md shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold hover:ring-blue-500 focus:outline-none"><FcGoogle/>Register with Google</Button>
+                        <Button  className="flex justify-evenly items-center border border-gray-400 text-center text-gray-500 w-3/4 h-12 rounded-md shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold  focus:outline-none"><FcGoogle /><div>Register with Google</div> <div></div></Button>
                     </form>
                 </div>
             </div>
