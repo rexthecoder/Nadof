@@ -9,7 +9,9 @@ module.exports = {
 
       }),
       fontFamily: {
-        'title': ['Poppins',]
+        'title': ['Poppins'],
+        'body': ['Gilroy-Light'],
+        'subTitle': ['Gilory-Medium']
       },
 
       colors: {

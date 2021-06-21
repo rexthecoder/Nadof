@@ -43,9 +43,9 @@ const RegistrationFinish = () => {
                     <div className="text-base text-gray-300 pb-5">For the purpose of industry regulation, your<br />details are required.</div>
                     <hr className="w-4/5 mb-3"/>
              <form className="space-y-14">
-                <Inputfields type="text" label="Bank verification number(RegistrationFinish)" placeholder="2090912345567" />
-                <Button text="Save and Continue" className="block w-3/4 h-12  text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300"/>
-                <div className="text-base text-gray-300 justify-center items-center"><BiLock color="gray" /> Your Info is Safely Secured </div>
+                <Inputfields type="text" label="Bank verification number(BVN)" placeholder="2090912345567" />
+                <Button  className="block w-3/4 h-12  text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Save and Continue</Button>
+                <div className="flex text-base text-gray-300 justify pr-5 items-center"><BiLock color="gray" /> Your Info is Safely Secured </div>
                 </form>
                 </div>
             </div>          

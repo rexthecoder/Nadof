@@ -53,12 +53,12 @@ const Registration = () => {
                             <input type="checkbox" id="agree"/>
                             <label for="agree" className="ml-2 text-gray-300 text-sm">I agree to terms and condition</label>
                         </div>
-                        <Button text="Register Account" className="block w-3/4 h-12 text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300"/>
+                        <Button  className="block w-3/4 h-12 text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Register Account</Button>
                         <div className="flex space-x-2 items-center mt-2">
                         <hr className="w-1/3"/><span className="p-2 text-center text-gray-400">Or</span>
                         <hr className="w-1/3"/>
                         </div>
-                        <Button text="Register with Google" className="flex justify-around items-center border border-gray-400 text-center text-gray-500 w-3/4 h-12 rounded-md shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold hover:ring-blue-500 focus:outline-none"><FcGoogle/></Button>
+                        <Button  className="flex justify-around items-center border border-gray-400 text-center text-gray-500 w-3/4 h-12 rounded-md shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold hover:ring-blue-500 focus:outline-none"><FcGoogle/>Register with Google</Button>
                     </form>
                 </div>
             </div>
