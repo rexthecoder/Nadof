@@ -21,7 +21,7 @@ const Onboarding = () => {
         </div>);
     }
     return (
-        <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.5}}>
+        <motion.div  initial={{scaleY:0, }}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.2}}>
             <div className="flex flex-row overflow-hidden">
 
                 <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
