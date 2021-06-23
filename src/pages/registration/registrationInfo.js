@@ -1,13 +1,15 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
 import { AiOutlineLeft } from 'react-icons/ai';
 import { BiLock } from 'react-icons/bi';
 
-import Logo from '../assets/img/logo.svg';
-import quote from '../assets/img/quote.svg';
-import quoteEnd from '../assets/img/quoteEnd.svg';
-import Button from '../components/Button';
-import Inputfields from '../components/Inputfields';
+import Logo from '../../assets/img/logo.svg';
+import quote from '../../assets/img/quote.svg';
+import quoteEnd from '../../assets/img/quoteEnd.svg';
+import Button from '../../components/Button';
+import Inputfields from '../../components/Inputfields';
+
 
 const RegistrationInfo = () => {
     var rows = [];
@@ -19,6 +21,7 @@ const RegistrationInfo = () => {
         </div>);
     }
     return (
+        <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.2}}>
         <div className="flex flex-row overflow-hidden">
             <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                 <div className="flex flex-col space-y-6">
@@ -52,6 +55,7 @@ const RegistrationInfo = () => {
                 </div>
             </div>          
         </div>
+        </motion.div>
     )
 }
 

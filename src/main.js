@@ -7,6 +7,8 @@ import {
 
 import Onboarding from './pages/registration/onboarding';
 import Registration from './pages/registration/registration';
+import RegistrationInfo from './pages/registration/registrationInfo';
+import RegistrationFinish from './pages/registration/registrationFinish';
 import * as serviceWorker from './serviceWorker';
 
 const Main = () => {
@@ -19,6 +21,12 @@ const Main = () => {
         </Route>
         <Route path="/registration" exact >
           <Registration />
+        </Route>
+        <Route path="/registrationInfo" exact >
+          <RegistrationInfo />
+          </Route>
+          <Route path="/registrationFinish" exact >
+          <RegistrationFinish />
         </Route>
       </Switch>
     </AnimatePresence>

@@ -46,8 +46,8 @@ const Onboarding = () => {
                         <div className=" font-bold text-2xl pt-5 pb-2 ">Join Us!</div>
                         <div className="text-lg text-gray-300 pb-5 font-body">To begin this journey, tell us what type of<br />account you’d be opening.</div>
                         <Link to="/registration"><Card image={student} title="Student" subtitle={`Read books on the various types`} /></Link>
-                        <Card image={tourist} title="Tourist" subtitle="Love art works? satisfy yourself !" />
-                        <Card image={artist} title="Artist" subtitle="Exhibit your amazing work online." />
+                        <Link to="/registrationInfo"><Card image={tourist} title="Tourist" subtitle="Love art works? satisfy yourself !" /></Link>
+                        <Link to="/registrationFinish"><Card image={artist} title="Artist" subtitle="Exhibit your amazing work online." /></Link>
                     </div>
 
                 </div>

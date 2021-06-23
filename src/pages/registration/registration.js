@@ -42,23 +42,23 @@ const Registration = () => {
                 <div className="flex justify-between text-gray-200 px-10 "><div className="flex justify items-center"><AiOutlineLeft color="gray" />Back</div>STEP 01/03</div>
                 <div className="flex justify-end text-base text-gray-400 px-10 ">Personal Info.</div>
                 <div className="flex flex-col justify-center  justify-items-center pl-52 py-5 ">
-                    <div className=" font-bold text-2xl pt-1">Register Individual Account!</div>
-                    <div className="text-base text-gray-300 pb-5">For the purpose of industry regulation, your<br />details are required.</div>
-                    <hr className="w-4/5 mb-3"/>
+                    <div className=" font-bold text-2xl pt-1 pb-1">Register Individual Account!</div>
+                    <div className=" text-lg text-gray-300 pb-2">For the purpose of industry regulation, your<br />details are required.</div>
+                    <hr className="w-4/5 mb-2"/>
                     <form className="space-y-3">
-                       <Inputfields show= {true} type="text" label="Your fullname*" placeholder="Abigail Dwain" />
+                       <Inputfields  type="text" label="Your fullname*" placeholder="Abigail Dwain" />
                        <Inputfields type="text" label="Email address*" placeholder="Enter email address " />
-                       <Inputfields type="text" label="Create password*" placeholder="Create password" />
+                       <Inputfields show= {true} type="text" label="Create password*" placeholder="Create password" />
                         <div className="flex items-center">
                             <input type="checkbox" id="agree"/>
-                            <label for="agree" className="ml-2 text-gray-300 text-sm">I agree to terms and condition</label>
+                            <label for="agree" className="ml-2 text-gray-300 text-lg">I agree to terms and condition</label>
                         </div>
-                        <Button  className="block w-3/4 h-12 text-center bg-blue-500 text-white py-2 px 4  rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Register Account</Button>
-                        <div className="flex space-x-2 items-center mt-2">
+                        <Button  className="block w-3/4 h-12 text-center bg-blue-500 text-white py-2 px 4 font-semibold rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Register Account</Button>
+                        <div className="flex space-x-1 items-center mt-1">
                         <hr className="w-1/3"/><span className="p-2 text-center text-gray-400">Or</span>
                         <hr className="w-1/3"/>
                         </div>
-                        <Button  className="flex justify-evenly items-center border border-gray-400 text-center text-gray-500 w-3/4 h-12 rounded-md shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold  focus:outline-none"><FcGoogle /><div>Register with Google</div> <div></div></Button>
+                        <Button  className="flex justify-evenly items-center  font-semibold text-center text-gray-500 w-3/4 h-12 rounded-md shadow-lg hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 font-bold  focus:outline-none"><FcGoogle /><div>Register with Google</div> <div></div></Button>
                     </form>
                 </div>
             </div>
