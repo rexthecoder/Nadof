@@ -21,7 +21,7 @@ const Onboarding = () => {
         </div>);
     }
     return (
-        <motion.div  initial={{scaleY:0, }}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.2}}>
+        <motion.div initial={{ scaleY: 0, }} animate={{ scaleY: 1 }} exit={{ scaleY: 0 }} transition={{ duration: 0.2 }}>
             <div className="flex flex-row overflow-hidden">
 
                 <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
@@ -41,6 +41,7 @@ const Onboarding = () => {
                     </div>
                 </div>
                 <div className="flex-1 colors.background min-h-screen">
+
                     <div className="flex justify-end text-lg font-body text-gray-300 px-10 py-10">Already have an account? <span className="text-blue-600 pl-1 font-body text-lg">Sign In</span></div>
                     <div className="flex flex-col justify-center  justify-items-center pl-52 py-5">
                         <div className=" font-bold text-2xl pt-5 pb-2 ">Join Us!</div>

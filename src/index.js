@@ -9,13 +9,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Main from './main.js';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './services/themeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Main />
-    </Router>
-
+    <ThemeProvider>
+      <Router>
+        <Main />
+      </Router>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
