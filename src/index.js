@@ -13,7 +13,7 @@ import { ThemeProvider } from './services/themeContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <ThemeProvider initialTheme = 'dark'>
       <Router>
         <Main />
       </Router>
