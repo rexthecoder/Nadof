@@ -3,7 +3,7 @@ import React from 'react';
 const Inputfields = ({ label, type, placeholder, className , show}) => {
     return (
         <div>
-            <div className="block mb-2 font-semibold text-gray-500">
+            <div className="block mb-2 font-semibold text-white ">
                 <label>{label}</label>
             </div>
             <div className="relative">
@@ -15,7 +15,7 @@ const Inputfields = ({ label, type, placeholder, className , show}) => {
                 </span> }
                 <input type={type}
                 placeholder={placeholder}
-                className="w-3/4 border border-gray-400 p-4 rounded-md shadow-md  hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 focus:border-blue-300 focus:outline-none text-gray-300 " />
+                className="flex  w-50 border border-gray-400 p-4 rounded-md shadow-md  hover:shadow-lg ring-1 ring-transparent hover:ring-blue-500 focus:border-blue-300 focus:outline-none text-gray-300 content-center items-center " />
             </div>
         </div>
     )

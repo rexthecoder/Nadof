@@ -22,8 +22,8 @@ const Registration = () => {
     }
     return (
         <motion.div  initial={{scaleY:0}}  animate={{scaleY:1}}  exit={{scaleY: 0}} transition={{duration: 0.2}}>
-        <div className="flex flex-row overflow-hidden">
-            <div className={`flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
+        <div className="flex flex-row overflow-hidden bg-registration bg-cover bg-no-repeat lg:flex flex-row overflow-hidden">
+            <div className={`hidden flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                 <div className="flex flex-col space-y-6">
                     {rows}
                     <img src={Logo} alt="Logo" className="py-10 w-36 max-height-xs " />
@@ -37,23 +37,23 @@ const Registration = () => {
                     </div>
                 </div>
             </div>
-            <div  className="flex-1 colors.background min-h-screen">
+            <div  className="md:flex-1 colors.background min-h-screen">
                
-                <div className="flex justify-between text-gray-200 px-10 "><div className="flex justify items-center"><AiOutlineLeft color="gray" />Back</div>STEP 01/03</div>
+                <div className="flex justify-end md:justify-between text-gray-200 px-10 "><div className="hidden flex justify items-center"><AiOutlineLeft color="gray" />Back</div>STEP 01/03</div>
                 <div className="flex justify-end text-base text-gray-400 px-10 ">Personal Info.</div>
-                <div className="flex flex-col justify-center  justify-items-center pl-52 py-5 ">
-                    <div className=" font-bold text-2xl pt-1 pb-1">Register Individual Account!</div>
-                    <div className=" text-lg text-gray-300 pb-2">For the purpose of industry regulation, your<br />details are required.</div>
-                    <hr className="w-4/5 mb-2"/>
-                    <form className="space-y-3">
+                <div className="flex flex-col justify-center content-center item-center justify-items-center md:pl-52 py-3  ">
+                    <div className="item-center justify-items-center text-white self-center font-bold text-2xl pt-1 pb-1">Register Individual Account!</div>
+                    <div className=" text-lg text-center text-gray-300 pb-2 font-body">For the purpose of industry regulation, your<br />details are required.</div>
+                    <hr className="lg:w-4/5 w-4/5 mb-1 p-5"/>
+                    <form className="space-y-3 px-10">
                        <Inputfields  type="text" label="Your fullname*" placeholder="Abigail Dwain" />
                        <Inputfields type="text" label="Email address*" placeholder="Enter email address " />
-                       <Inputfields show= {true} type="text" label="Create password*" placeholder="Create password" />
+                       <Inputfields show= {false} type="text" label="Create password*" placeholder="Create password" />
                         <div className="flex items-center">
                             <input type="checkbox" id="agree"/>
                             <label for="agree" className="ml-2 text-gray-300 text-lg">I agree to terms and condition</label>
                         </div>
-                        <Button  className="block w-3/4 h-12 text-center bg-blue-500 text-white py-2 px 4 font-semibold rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Register Account</Button>
+                        <Button  className="block w-52 h-12 text-center bg-blue-500 text-white py-2  font-semibold rounded shadow-md hover:shadow-lg ring-1 ring-transparent hover:ring-blue-800 hover:bg-blue-300">Register Account</Button>
                         <div className="flex space-x-1 items-center mt-1">
                         <hr className="w-1/3"/><span className="p-2 text-center text-gray-400">Or</span>
                         <hr className="w-1/3"/>
