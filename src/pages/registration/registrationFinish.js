@@ -37,7 +37,7 @@ const RegistrationFinish = () => {
                     </div>
                 </div>
             </div>
-            <div  className="md:flex-1 colors.background min-h-screen">
+            <div  className="md:flex-1 colors.background min-h-screen flex justify-center">
                
                 <div className="flex justify-end md:justify-between text-gray-200 px-10 "><div className="flex justify items-center"><AiOutlineLeft color="gray" />Back</div>STEP 03/03</div>
                 <div className="flex justify-end text-base text-gray-400 px-10 ">Bank Verification.</div>
