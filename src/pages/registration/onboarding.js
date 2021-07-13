@@ -25,7 +25,7 @@ const Onboarding = () => {
             <div className="flex justify-center lg:justify-start items-center flex-row max-h-screen max-w-screen overflow-hidden bg-registration lg:bg-none bg-no-repeat min-h-screen bg-cover">
                 <div className={`hidden  lg:flex w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                     <div className="flex flex-col space-y-6">
-                        {rows}
+                    {rows}
                         <img src={Logo} alt="Logo" className="py-10 w-36 max-height-xs " />
                         <img src={quote} alt="Quote Icon" className="flex pt-24 w-7 max-height-xs items-center justify-items-center" />
                         <div className="font-body text-xl text-white">
@@ -38,10 +38,11 @@ const Onboarding = () => {
                     </div>
                 </div>
                 <div className='flex flex-col max-h-screen lg:colors.background lg:flex-1 min-h-screen max-w-screen min-w-screen px-5'>
+                    {rows}
                     <div className="flex items-center justify-center lg:justify-end lg:items-end text-lg font-body text-gray-300 py-6 lg:px-11">Already have an account? <span className="text-white lg:text-pink-900 pl-1 font-body text-xl cursor-pointer">Sign In</span></div>
                     <div className="flex bg-red flex-col items-center justify-center lg:justify-start lg:items-start lg:px-56">
                         <div className=" text-white font-bold text-2xl pt-5 pb-2 lg:text-black ">Join Us!</div>
-                        <div className="text-lg  text-center lg:text-left text-gray-300 pb-10 font-body">To begin this journey, tell us what type of<br className="hidden lg:block md:block"/>account you’d be opening.</div>
+                        <div className="text-lg  text-center lg:text-left text-gray-300 pb-10 font-body">To begin this journey, tell us what type of<br className="hidden lg:block md:block md:pl-2" /> account you’d be opening.</div>
                         <Link to="/registration"><Card image={student} title="Student" subtitle={`Read books on the various types`} /></Link>
                         <Link to="/registrationInfo"><Card image={tourist} title="Tourist" subtitle="Love art works? satisfy yourself !" /></Link>
                         <Link to="/registrationFinish"><Card image={artist} title="Artist" subtitle="Exhibit your amazing work online." /></Link>
