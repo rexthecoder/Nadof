@@ -10,6 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Main from './main.js';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './services/themeContext';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,3 +27,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+serviceWorkerRegistration.unregister();
