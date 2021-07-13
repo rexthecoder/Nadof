@@ -25,7 +25,7 @@ const Onboarding = () => {
             <div className="flex justify-center lg:justify-start items-center flex-row max-h-screen max-w-screen overflow-hidden bg-registration lg:bg-none bg-no-repeat min-h-screen bg-cover">
                 <div className={`hidden  lg:flex w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                     <div className="flex flex-col space-y-6">
-                    {rows}
+                        {rows}
                         <img src={Logo} alt="Logo" className="py-10 w-36 max-height-xs " />
                         <img src={quote} alt="Quote Icon" className="flex pt-24 w-7 max-height-xs items-center justify-items-center" />
                         <div className="font-body text-xl text-white">
