@@ -37,7 +37,7 @@ const Onboarding = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col max-h-screen lg:colors.background lg:flex-1 min-h-screen max-w-screen min-w-screen px-5'>
+                <div className='flex flex-col max-h-screen lg:colors.background lg:flex-1 min-h-screen max-w-screen min-w-screen px-5 overflow-hidden'>
                     {rows}
                     <div className="flex items-center justify-center lg:justify-end lg:items-end text-lg font-body text-gray-300 py-6 lg:px-11">Already have an account? <span className="text-white lg:text-pink-900 pl-1 font-body text-xl cursor-pointer">Sign In</span></div>
                     <div className="flex bg-red flex-col items-center justify-center lg:justify-start lg:items-start lg:px-56">
