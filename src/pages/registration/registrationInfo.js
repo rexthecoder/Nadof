@@ -39,13 +39,13 @@ const RegistrationInfo = () => {
             </div>
             <div  className="flex flex-col max-h-screen lg:colors.background lg:flex-1 min-h-screen max-w-screen min-w-screen px-5">
                
-                <div className="hidden flex justify-end lg:justify-between text-gray-200 px-10 "><div className="hidden lg:flex justify items-center"><AiOutlineLeft color="gray" />Back</div>STEP 02/03</div>
-                <div className="flex items-center justify-end lg:justify-end lg:items-end text-lg font-body text-gray-400 py-2 lg:px-11">Residency Info.</div>
+                <div className="hidden lg:flex lg:justify-end lg:justify-between lg:text-gray-200 lg:px-10 "><div className="hidden lg:flex lg:justify lg:items-center"><AiOutlineLeft color="gray" />Back</div>STEP 02/03</div>
+                <div className="flex items-center justify-end lg:justify-end lg:items-end text-lg font-body text-gray-300 py-5 lg:px-11">Residency Info.</div>
                 <div className="flex bg-red flex-col items-center justify-center lg:justify-start lg:items-start lg:px-56 ">
-                    <div className="text-white font-bold text-2xl pt-1 pb-2 lg:text-black">Complete Your Profile!</div>
-                    <div className="text-lg text-center lg:text-justify  text-gray-300 pb-3 font-body">For the purpose of industry regulation, your<br />details are required.</div>
-                    <hr className="lg:w-80 w-80 mb-3"/>
-             <form className="space-y-3">
+                    <div className="text-white font-bold text-2xl pt-2 pb-4 lg:text-black">Complete Your Profile!</div>
+                    <div className="text-lg text-center lg:text-justify  text-gray-300 pb-5 font-body">For the purpose of industry regulation, your<br />details are required.</div>
+                    <hr className="lg:w-80 w-80 mb-5"/>
+             <form className="space-y-10 lg:space-y-5">
                 <Inputfields type="text" label="Phone number" placeholder="244758291" />
                 <Inputfields type="text" label="Your address" placeholder="Please enter address" />
                 <Inputfields type="text" label="Country of residence" placeholder="Please select" />
