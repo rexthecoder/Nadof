@@ -22,10 +22,8 @@ const Onboarding = () => {
     }
     return (
         <motion.div initial={{ scaleY: 0, }} animate={{ scaleY: 1 }} exit={{ scaleY: 0 }} transition={{ duration: 0.2 }}>
-            <div className="flex flex-row overflow-hidden bg-registration bg-cover bg-no-repeat">
-
-                <div className={`hidden  md:flex-none w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
-
+            <div className="flex justify-center lg:justify-start items-center flex-row max-h-screen max-w-screen overflow-hidden bg-registration lg:bg-none bg-no-repeat min-h-screen bg-cover">
+                <div className={`hidden  lg:flex w-2/5 colors.background min-h-screen bg-registration bg-cover bg-no-repeat px-10  content-evenly`}>
                     <div className="flex flex-col space-y-6">
                         {rows}
                         <img src={Logo} alt="Logo" className="py-10 w-36 max-height-xs " />
@@ -37,20 +35,17 @@ const Onboarding = () => {
                             <p>El Anatsui.</p>
                             <img src={quoteEnd} alt="Quote End Logo" className="py-10 w-7 max-height-xs " />
                         </div>
-
                     </div>
                 </div>
-                <div className=" md:flex-1 colors.background min-h-screen">
-
-                    <div className="flex justify-center md:justify-end text-lg font-body text-gray-300 md:px-10 py-10">Already have an account? <span className="text-pink-900 pl-1 font-body text-xl">Sign In</span></div>
-                    <div className="flex flex-col justify-center item-center  content-center justify-items-center md:pl-52 py-5 px-5">
-                        <div className="item-center justify-items-center text-white self-center font-bold text-2xl pt-5 pb-2 ">Join Us!</div>
-                        <div className="text-lg  text-center  text-gray-300 pb-10 font-body">To begin this journey, tell us what type of<br />account you’d be opening.</div>
+                <div className='flex flex-col max-h-screen lg:colors.background lg:flex-1 min-h-screen max-w-screen min-w-screen px-5'>
+                    <div className="flex items-center justify-center lg:justify-end lg:items-end text-lg font-body text-gray-300 py-6 lg:px-11">Already have an account? <span className="text-white lg:text-pink-900 pl-1 font-body text-xl cursor-pointer">Sign In</span></div>
+                    <div className="flex bg-red flex-col items-center justify-center lg:justify-start lg:items-start lg:px-56">
+                        <div className=" text-white font-bold text-2xl pt-5 pb-2 lg:text-black ">Join Us!</div>
+                        <div className="text-lg  text-center lg:text-left text-gray-300 pb-10 font-body">To begin this journey, tell us what type of<br className="hidden lg:block md:block"/>account you’d be opening.</div>
                         <Link to="/registration"><Card image={student} title="Student" subtitle={`Read books on the various types`} /></Link>
                         <Link to="/registrationInfo"><Card image={tourist} title="Tourist" subtitle="Love art works? satisfy yourself !" /></Link>
                         <Link to="/registrationFinish"><Card image={artist} title="Artist" subtitle="Exhibit your amazing work online." /></Link>
                     </div>
-
                 </div>
             </div>
         </motion.div>
@@ -58,7 +53,6 @@ const Onboarding = () => {
 }
 
 export default Onboarding
-
 
 
 
