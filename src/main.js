@@ -25,7 +25,7 @@ const Main = () => {
           <RegistrationInfo />
           </Route>
           <Route path="/registrationFinish" exact >
-          <RegistrationFinish />
+          <RegistrationInfo />
         </Route>
       </Switch>
     </AnimatePresence>
