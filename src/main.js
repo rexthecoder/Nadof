@@ -7,7 +7,6 @@ import {
 
 import Onboarding from './pages/registration/onboarding';
 import Registration from './pages/registration/registration';
-import RegistrationFinish from './pages/registration/registrationFinish';
 import RegistrationInfo from './pages/registration/registrationInfo';
 
 const Main = () => {
